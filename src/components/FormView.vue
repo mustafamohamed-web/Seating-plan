@@ -9,7 +9,7 @@
     <label for="experience">Years of Experience:</label>
     <input type="number" v-model="experience" id="experience" />
 
-    <label for="productivity">Productivity Level (1-5):</label>
+    <label for="productivity">Productivity(1-5):</label>
     <input
       type="number"
       v-model="productivity"
