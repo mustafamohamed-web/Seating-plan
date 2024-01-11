@@ -1,0 +1,54 @@
+{
+    "staffMembers": [
+        {
+            "name": "Alice",
+            "productivityLevel": 7,
+            "experienceYears": 5
+        },
+        {
+            "name": "Bob",
+            "productivityLevel": 3,
+            "experienceYears": 2
+        },
+        {
+            "name": "Charlie",
+            "productivityLevel": 6,
+            "experienceYears": 8
+        },
+        {
+            "name": "Diana",
+            "productivityLevel": 9,
+            "experienceYears": 10
+        },
+        {
+            "name": "Ethan",
+            "productivityLevel": 4,
+            "experienceYears": 1
+        },
+        {
+            "name": "Fiona",
+            "productivityLevel": 8,
+            "experienceYears": 7
+        },
+        {
+            "name": "George",
+            "productivityLevel": 5,
+            "experienceYears": 3
+        },
+        {
+            "name": "Hannah",
+            "productivityLevel": 2,
+            "experienceYears": 4
+        },
+        {
+            "name": "Ian",
+            "productivityLevel": 10,
+            "experienceYears": 6
+        },
+        {
+            "name": "Jasmine",
+            "productivityLevel": 1,
+            "experienceYears": 9
+        }
+    ]
+}

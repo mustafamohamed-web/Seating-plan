@@ -1,0 +1,7 @@
+@import "@fontsource/news-cycle/400.css";
+@import "@fontsource/news-cycle/700.css";
+
+:root {
+  --fallback: sans-serif;
+  --new-cycle: "news-cycle", var(--fallback);
+}
