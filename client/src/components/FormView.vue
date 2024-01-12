@@ -35,6 +35,7 @@
 
 <script setup>
 import { ref, reactive } from "vue";
+import axios from "axios";
 
 const formData = reactive({
   firstName: "",
@@ -43,18 +44,35 @@ const formData = reactive({
   productivity: 0,
   job: "",
 });
-const staff = ref([]);
 
-const handleSubmit = () => {
-  const newData = { ...formData };
-  staff.value.push(newData);
-
-  console.log(newData);
-
-  formData.name = "";
+const handleSubmit = async () => {
+  try {
+    const response = await axios.post(
+      "http://localhost:3000/api/data",
+      formData
+    );
+    console.log("Data saved:", response.data);
+    // Optionally update UI or perform other actions on successful save
+  } catch (error) {
+    console.error("Error saving data:", error);
+    // Handle error (e.g., show a message to the user)
+  }
+  formData.firstName = "";
   formData.surname = "";
   formData.experience = 0;
   formData.productivity = 0;
   formData.job = "";
+};
+
+// Fetch data from the backend (optional)
+const fetchData = async () => {
+  try {
+    const response = await axios.get("http://localhost:3000/api/data");
+    console.log("Fetched data:", response.data);
+    // Optionally update UI with fetched data
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    // Handle error (e.g., show a message to the user)
+  }
 };
 </script>
